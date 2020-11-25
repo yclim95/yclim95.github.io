@@ -64,7 +64,7 @@ Lim Yao Cheng (YC)
 							<h3>I am <span class="typed"></span></h3>
 							<p class="typed-items" data-typed-person="YC Lim">a Developer,a CoFounder</p>
               <ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-twitter2"></i></a></li>
+									<li><a href="https://twitter.com/yclim95"><i class="icon-twitter2"></i></a></li>
 									<li><a href="https://www.facebook.com/YCLim950421/"><i class="icon-facebook2"></i></a></li>
 									<li><a href="https://www.linkedin.com/in/yclim950421/"><i class="icon-linkedin2"></i></a></li>
               </ul>
@@ -124,17 +124,35 @@ Lim Yao Cheng (YC)
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Portfolio</h2>
 				</div>
-			</div>
+			</div> <!-- end of animate box-->
+
 			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="http://carlab.epizy.com/" class="work" style="background-image: url(img/carlab-portfolio.png);">
-						<div class="desc">
-							<h3>My Company Website (Carlab)</h3>
-							<span>Static Website</span>
-						</div>
-					</a>
+                <div class="col-lg-12">
+                    <div class="porfolio-tabs pt-30 text-center">
+                        <ul>
+                            <li data-filter="*" class="active">ALL</li>
+							<li data-filter=".owncompany">Own Company</li>
+							<li data-filter=".frontend">Front End (Basic)</li>
+                        </ul>
+                    </div> <!-- about menu -->
+                </div>
+			</div> <!-- row -->
+			
+			<div class="row grid">
+				<div class="grid-item owncompany">
+					<div class="text-center col-padding animate-box">
+						<a href="http://carlab.epizy.com/" class="work wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s" style="background-image: url(img/carlab-portfolio.png);">
+							<div class="desc">
+								<h3>My Company Website (Carlab)</h3>
+								<span>Static Website</span>
+							</div>
+						</a>
+					</div>
 				</div>
-			</div>
+
+
+			</div> <!-- end of one portfolio -->
+
 		</div>
 	</div>
 
@@ -218,12 +236,16 @@ Lim Yao Cheng (YC)
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<script src="js/typed.js"></script>
+	<!-- Wow -->
+	<script src="js/wow.min.js"></script>
 	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/9c3090892c.js" crossorigin="anonymous"></script>
-	
+	<!-- Images loaded -->
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<!-- Filter & Sort magical layouts -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	</body>
 </html>
 

@@ -1291,3 +1291,60 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* PORTFOLIO */
+.grid{
+  width: 100%;
+}
+
+.grid-item{
+  width: 25%;
+}
+.porfolio-tabs ul li {
+  font-size: 16px;
+  font-weight: 700;
+  color: #6c6c6c;
+  line-height: 48px;
+  padding: 0 30px;
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  cursor: pointer;
+  margin: 0 2px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .porfolio-tabs ul li {
+      font-size: 14px;
+      padding: 0 26px; } }
+  @media (max-width: 767px) {
+    .porfolio-tabs ul li {
+      font-size: 14px;
+      padding: 0 22px;
+      line-height: 42px; } }
+  .porfolio-tabs ul li::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: -webkit-linear-gradient(left, #e9823d 0%, #f7682f 100%);
+    background: -o-linear-gradient(left,  #e9823d 0%,#f7682f 100%);
+    background: linear-gradient(to right,  #e9823d 0%, #f7682f 100%);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    border-radius: 4px; }
+  .porfolio-tabs ul li:hover, .porfolio-tabs ul li.active {
+    color:  #f75616; }
+    .porfolio-tabs ul li:hover::before, .porfolio-tabs ul li.active::before {
+      opacity: 1; }

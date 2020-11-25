@@ -169,4 +169,40 @@
 	});
 
 
+	// Images done loading?
+	$('.container').imagesLoaded(function () {
+        var $grid = $('.grid').isotope({
+            // options
+			//transitionDuration: '1s'
+			itemSelector: '.grid-item'
+        });
+
+        // filter items on button click
+        $('.porfolio-tabs ul').on('click', 'li', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+
+        //To set active filter for portfolio
+        //Load Page
+        $(function() {
+            //Read which data-filter class is .active
+            //Filter it 
+            var filterValue = $('.porfolio-tabs ul li').attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+
+        //for  active class
+        $('.porfolio-tabs ul li').on('click', function (event) {
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            event.preventDefault();
+        });
+	});
+	
+
 }());
